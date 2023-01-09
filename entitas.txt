@@ -1,0 +1,29 @@
+-- Admin
+PK  id
+    username
+    password
+
+-- Layanan
+PK  id
+    nama
+    deskripsi
+    harga
+
+-- Pelanggan
+    username
+    password
+    nama
+    nama_perusahaan
+    alamat
+    no_hp
+    email
+
+-- Sewa
+PK  id
+    id_layanan
+    id_pelanggan
+    tgl_mulai
+    tg_selesai
+
+
+CREATE TABLE `cms`.`pelanggan` ( `username` VARCHAR(255) NOT NULL , `password` VARCHAR(255) NOT NULL , `nama` VARCHAR(255) NOT NULL , `nama_perusahaan` VARCHAR(255) NOT NULL , `alamat` TEXT NOT NULL , `no_hp` VARCHAR(15) NOT NULL , `email` VARCHAR(255) NOT NULL , `id` INT NOT NULL AUTO_INCREMENT , PRIMARY KEY (`id`)) ENGINE = InnoDB;
