@@ -33,38 +33,29 @@
       <div class="col-sm-3 col-md-3">
         <div class="footer-item">
           <div class="footer-title">Recent Post</div>
-          <ul class="recent-post">
-            <li>
-              <a href="#" title="">The Best in dolor sit amet consectetur adipisicing elit sed</a> <span class="date"><i class="fa fa-clock-o"></i> June 16, 2017</span>
-            </li>
-            <li>
-              <a href="#" title="">The Best in dolor sit amet consectetur adipisicing elit sed</a> <span class="date"><i class="fa fa-clock-o"></i> June 16, 2017</span>
-            </li>
-          </ul>
         </div>
       </div>
       <div class="col-sm-3 col-md-3">
         <div class="footer-item">
-          <div class="footer-title">Our Services</div>
+          <div class="footer-title">Layanan Kami</div>
           <ul class="list">
-            <li><a href="service-life-insurance.html" title="">Mechanical Engineering</a></li>
-            <li><a href="service-car-insurance.html" title="">Agricultural Processing</a></li>
-            <li><a href="service-travel-insurance" title="">Oil and Lubricants</a></li>
-            <li><a href="service-house-insurance.html" title="">Power and Energy</a></li>
-            <li><a href="service-vehicle-insurance.html" title="">Chemical Research</a></li>
-            <li><a href="service-boat-insurance.html" title="">Material Engineering</a></li>
+            <li><a href="service-life-insurance.html" title="">Rewinding AC/DC Motor LV, MV, HV</a></li>
+            <li><a href="service-car-insurance.html" title="">Generator</a></li>
+            <li><a href="service-travel-insurance" title="">Inverter</a></li>
+            <li><a href="service-house-insurance.html" title="">Turbo Charger</a></li>
+            <li><a href="service-vehicle-insurance.html" title="">Pompa</a></li>
+            <li><a href="service-boat-insurance.html" title="">Screw Composer</a></li>
           </ul>
         </div>
       </div>
       <div class="col-sm-3 col-md-3">
         <div class="footer-item">
           <div class="footer-title">Subscribe</div>
-          <p>Lit sed The Best in dolor sit amet consectetur adipisicing elit sedconsectetur adipisicing</p>
+          <p>Aktifkan Layanan Notifikasi Penawaran dari kami</p>
           <form action="#" class="footer-subscribe">
             <input type="email" name="EMAIL" class="form-control" placeholder="enter your email" />
             <input id="p_submit" type="submit" value="send" />
             <label for="p_submit"><i class="fa fa-envelope"></i></label>
-            <p>Get latest updates and offers.</p>
           </form>
         </div>
       </div>
@@ -75,7 +66,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-12">
-          <p class="ftex">&copy; 2017 Petro by Rudhi Sasmito - All Rights Reserved</p>
+          <p class="ftex">&copy; 2023 PT Cipta Manunggal Selaras - All Rights Reserved</p>
         </div>
       </div>
     </div>

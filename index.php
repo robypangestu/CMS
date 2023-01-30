@@ -239,9 +239,8 @@
         <div class="box-icon-4">
           <div class="icon"><i class="fa fa-phone"></i></div>
           <div class="body-content">
-            <div class="heading">CALL US NOW</div>
-            Office Telephone: +62 800 9000 123 <br />
-            Mobile: +62 800 9000 123
+            <div class="heading">Hubungi Kami</div>
+            Mobile: +62 823 1525 7822
           </div>
         </div>
       </div>
@@ -250,8 +249,8 @@
         <div class="box-icon-4">
           <div class="icon"><i class="fa fa-map-marker"></i></div>
           <div class="body-content">
-            <div class="heading">COME VISIT US</div>
-            99 S.t Jomblo Park Pekanbaru 28292. Indonesia
+            <div class="heading">Kunjungi Workshop Kami</div>
+            Jl. Villa Mutiara Gading 3 Blok Q1 No. 11 Rt.06/Rw.012 Kebalen Babelan, Bekasi Utara
           </div>
         </div>
       </div>
@@ -260,9 +259,8 @@
         <div class="box-icon-4">
           <div class="icon"><i class="fa fa-envelope"></i></div>
           <div class="body-content">
-            <div class="heading">SEND US A MESSAGE</div>
-            General: info@petro.com<br />
-            Sales: sales@petro.com
+            <div class="heading">Email Kami</div>
+            cms.manunggal@gmail.com
           </div>
         </div>
       </div>
