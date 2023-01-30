@@ -7,7 +7,8 @@ PK  id
 PK  id
     nama
     deskripsi
-    harga
+    harga_awal
+    harga_akhir
 
 -- Pelanggan
     username
@@ -18,12 +19,19 @@ PK  id
     no_hp
     email
 
--- Sewa
+-- Pemesanan
 PK  id
     id_layanan
     id_pelanggan
     tgl_mulai
     tg_selesai
+    status (pending, dicek, selesai)
+    total_biaya
 
 
 CREATE TABLE `cms`.`pelanggan` ( `username` VARCHAR(255) NOT NULL , `password` VARCHAR(255) NOT NULL , `nama` VARCHAR(255) NOT NULL , `nama_perusahaan` VARCHAR(255) NOT NULL , `alamat` TEXT NOT NULL , `no_hp` VARCHAR(15) NOT NULL , `email` VARCHAR(255) NOT NULL , `id` INT NOT NULL AUTO_INCREMENT , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+
+Booking layanan
+Kapan dicek dengan pagawai langsung ke lokasi, pesan
+Kalau sudah di cek baru transaksi, total biaya.
+Invoice
