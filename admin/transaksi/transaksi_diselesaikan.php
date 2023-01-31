@@ -11,7 +11,7 @@ if(isset($_POST['submit'])) {
 	if (run("UPDATE pemesanan SET tgl_mulai = '$tgl_mulai', tgl_selesai = '$tgl_selesai', total = $total, status = 'diselesaikan' WHERE id = $id")) {
 		alert("Proses diubah", 'transaksi_detail.php?id=' . $id);
 	}else{
-		var_dump(mysqli_error($link));
+		var_dump(mysqli_error($conn));
 		die();
 	}
 }
