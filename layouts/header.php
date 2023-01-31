@@ -91,7 +91,10 @@
               <a href="index.php" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" >BERANDA</a>
             </li>
             <li class="dropdown">
-              <a href="layanan.php" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PESAN LAYANAN KAMI</a>
+              <a href="layanan.php" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PESAN LAYANAN</a>
+            </li>
+            <li class="dropdown">
+              <a href="pelanggan/transaksi/transaksi.php" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">TRANSAKSI</a>
             </li>
           </ul>
 
