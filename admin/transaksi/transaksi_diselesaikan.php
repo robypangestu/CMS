@@ -1,4 +1,3 @@
-<?php require_once '../../config/db.php'; ?>
 <?php require_once '../layouts/header.php'; ?>
 
 <?php
@@ -19,8 +18,7 @@ if(isset($_POST['submit'])) {
 
 ?>
 
-<div class="card">
-  <div class="card-body">
+<div class="container" style="margin-top: 20px">
     <h3>Penyelesaian Transaksi</h3>
     <form action="" method="POST">
       <div class="form-group">
@@ -39,7 +37,6 @@ if(isset($_POST['submit'])) {
 
       <button type="submit" name="submit" class="btn btn-primary mt-3">Selesaikan</button>
     </form>
-  </div>
 </div>
 
 <?php require_once '../layouts/footer.php'; ?>

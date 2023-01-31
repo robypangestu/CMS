@@ -15,7 +15,7 @@
 
   if(isset($_POST['submit'])) {
     $id_pel = $_SESSION['pelanggan']['id'];
-    $res = run("INSERT INTO pemesanan(id_layanan, id_pelanggan, tgl_pemesanan) VALUES ($id, $id_pel, now())");
+    $res = run("INSERT INTO pemesanan(id_layanan, id_pelanggan, id_admin, tgl_pemesanan) VALUES ($id, $id_pel, 1, now())");
 
     if($res) {
       alert('Pemesanan berhasil dilakukan', 'layanan_detail.php?id=' . $id);

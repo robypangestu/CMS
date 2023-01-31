@@ -1,4 +1,3 @@
-<?php require_once '../../config/db.php'; ?>
 <?php require_once '../layouts/header.php'; ?>
 
 <?php
@@ -11,8 +10,7 @@ function dateY($tgl) {
 }
 ?>
 
-<div class="card">
-  <div class="card-body">
+<div class="container" style="margin-top: 20px">
     <h3>Detail Transaksi</h3>
 
     <style>
@@ -101,7 +99,6 @@ function dateY($tgl) {
     <?php } else if($data['status'] == 'pengecekan') { ?>
       <a href="transaksi_diselesaikan.php?id=<?= $data['id_pemesanan'] ?>" class="btn btn-primary">Lanjutkan Finalisasi</a>
     <?php } ?>
-  </div>
 </div>
 
 <?php require_once '../layouts/footer.php'; ?>

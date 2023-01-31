@@ -88,13 +88,10 @@
         <nav class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-left">
             <li class="dropdown">
-              <a href="index.php" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" >HOME</a>
+              <a href="index.php" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">HOME</a>
             </li>
             <li class="dropdown">
               <a href="layanan.php" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SERVICES</a>
-            </li>
-            <li class="dropdown">
-              <a href="#" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT US</a>
             </li>
           </ul>
 

@@ -1,4 +1,3 @@
-<?php require_once '../../config/db.php'; ?>
 <?php require_once '../layouts/header.php'; ?>
 
 <?php
@@ -22,32 +21,30 @@ if(isset($_POST['submit'])) {
 
 ?>
 
-<div class="card">
-  <div class="card-body">
-    <h3>Edit Layanan</h3>
-    <form action="" method="POST">
-      <div class="form-group">
-        <label for="">Nama layanan</label>
-        <input type="text" class="form-control" name="nama" value="<?= $data['nama'] ?>" required>
+<div class="container" style="margin-top: 20px">
+  <h3>Edit Layanan</h3>
+  <form action="" method="POST">
+    <div class="form-group">
+      <label for="">Nama layanan</label>
+      <input type="text" class="form-control" name="nama" value="<?= $data['nama'] ?>" required>
+    </div>
+    <div class="form-group">
+      <label for="">Deskripsi layanan</label>
+      <textarea name="deskripsi" class="form-control" cols="5" rows="5" required><?= $data['deskripsi'] ?></textarea>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <label for="">Harga Awal</label>
+        <input type="number" class="form-control" name="harga_awal" value="<?= $data['harga_awal'] ?>" required>
       </div>
-      <div class="form-group">
-        <label for="">Deskripsi layanan</label>
-        <textarea name="deskripsi" class="form-control" cols="5" rows="3" required><?= $data['deskripsi'] ?></textarea>
+      <div class="col-md-6">
+        <label for="">Harga Akhir</label>
+        <input type="number" class="form-control" name="harga_akhir" value="<?= $data['harga_akhir'] ?>" required>
       </div>
-      <div class="row">
-        <div class="col-md-6">
-          <label for="">Harga Awal</label>
-          <input type="number" class="form-control" name="harga_awal" value="<?= $data['harga_awal'] ?>" required>
-        </div>
-        <div class="col-md-6">
-          <label for="">Harga Akhir</label>
-          <input type="number" class="form-control" name="harga_akhir" value="<?= $data['harga_akhir'] ?>" required>
-        </div>
-      </div>
+    </div>
 
-      <button type="submit" name="submit" class="btn btn-primary mt-3">Edit</button>
-    </form>
-  </div>
+    <button type="submit" name="submit" class="btn btn-primary" style="margin-top: 20px; margin-bottom: 20px;">Edit</button>
+  </form>
 </div>
 
 <?php require_once '../layouts/footer.php'; ?>

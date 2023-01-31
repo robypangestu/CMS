@@ -1,4 +1,3 @@
-<?php require_once '../../config/db.php'; ?>
 <?php require_once '../layouts/header.php'; ?>
 
 <?php
@@ -8,9 +7,8 @@ function dateY($tgl) {
 }
 ?>
 
-<div class="card">
-  <div class="card-body">
-    <h3>Detail Transaksi</h3>
+<div class="container" style="margin-top: 20px">
+    <h3>Data Transaksi</h3>
 
     <div class="table-responsive">
       <table class="table table-bordered">
@@ -37,7 +35,6 @@ function dateY($tgl) {
         </tbody>
       </table>
     </div>
-  </div>
 </div>
 
 <?php require_once '../layouts/footer.php'; ?>
