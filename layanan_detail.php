@@ -36,6 +36,7 @@
             <h6 style="margin-bottom: 20px">Estimasi Harga : <?= $data['harga_awal'] ?> - <?= $data['harga_akhir'] ?></h6>
             <p>Note: Pastikan identitas profil mu sudah benar. Setelah kamu melakukan pemesanan, kami akan memproses dan mengubah status pemesananmu di halaman panel.</p>
             <button type="submit" name="submit" class="btn btn-primary" onclick="return confirm('Kamu yakin ingin melakukan pemesanan?')">PESAN SEKARANG</button>
+            <div class="margin-bottom-50"></div>
           </form>
         <?php else : ?>
           <p>Pemesanan sedang dilakukan</p>
