@@ -38,5 +38,5 @@ if(isset($_POST['submit'])) {
       <button type="submit" name="submit" class="btn btn-primary mt-3">Selesaikan</button>
     </form>
 </div>
-
+<div class="margin-bottom-50"></div>
 <?php require_once '../layouts/footer.php'; ?>
