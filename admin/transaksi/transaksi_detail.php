@@ -99,6 +99,7 @@ function dateY($tgl) {
     <?php } else if($data['status'] == 'pengecekan') { ?>
       <a href="transaksi_diselesaikan.php?id=<?= $data['id_pemesanan'] ?>" class="btn btn-primary">Lanjutkan Finalisasi</a>
     <?php } ?>
+    <div class="margin-bottom-50"></div>
 </div>
 
 <?php require_once '../layouts/footer.php'; ?>

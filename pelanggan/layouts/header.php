@@ -88,10 +88,10 @@
         <nav class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-left">
             <li class="dropdown">
-              <a href="../../index.php" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" >HOME</a>
+              <a href="../../index.php" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" >BERANDA</a>
             </li>
             <li class="dropdown">
-              <a href="../../layanan.php" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SERVICES</a>
+              <a href="../../layanan.php" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PESAN LAYANAN</a>
             </li>
             <li class="dropdown">
               <a href="transaksi.php" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">TRANSAKSI</a>

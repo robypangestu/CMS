@@ -19,7 +19,7 @@
         $nama_perusahaan = $_POST['nama_perusahaan'];
         $alamat = $_POST['alamat'];
 
-        if (run("INSERT INTO pelanggan(username, password, nama, nama_perusahaan, alamat, no_hp, email) VALUES ('$username', '$password', '$nama', '$email', '$hp', '$nama_perusahaan', '$alamat')")) {
+        if (run("INSERT INTO pelanggan(username, password, nama, email, no_hp, nama_perusahaan, alamat) VALUES ('$username', '$password', '$nama', '$email', '$hp', '$nama_perusahaan', '$alamat')")) {
             alert("Selamat akun mu telah dibuat", 'login.php');
         }else{
             var_dump(mysqli_error($conn));
