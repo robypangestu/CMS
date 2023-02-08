@@ -93,9 +93,6 @@
             <li class="dropdown">
               <a href="layanan.php" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PESAN LAYANAN</a>
             </li>
-            <li class="dropdown">
-              <a href="pelanggan/transaksi/transaksi.php" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">TRANSAKSI</a>
-            </li>
           </ul>
 
           <ul class="nav navbar-nav navbar-right">

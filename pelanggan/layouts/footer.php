@@ -84,5 +84,11 @@
 <script type="text/javascript" src="../../js/vendor/isotope.pkgd.min.js"></script>
 
 <script type="text/javascript" src="../../js/script.js"></script>
+<script>
+  $(document).on('click', '#btnPrint', function (e) {
+    e.preventDefault();
+    window.print();
+  });
+</script>
 </body>
 </html>

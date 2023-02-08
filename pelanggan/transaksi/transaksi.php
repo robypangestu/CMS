@@ -7,10 +7,30 @@ function dateY($tgl) {
 }
 ?>
 
+<style>
+  table tr th:nth-child(1) {
+    width: 5%;
+    text-align: center;
+  }
+  table tr td:nth-child(1) {
+    text-align: center;
+  }
+  @media print {
+    .header, .footer, #btnPrint {
+      display: none;
+    }
+    #areaPrint {
+      display: block;
+    }
+  }
+</style>
+
 <div class="container" style="margin-top: 20px">
     <h3>Daftar Transaksi</h3>
 
-    <div class="table-responsive">
+    <button type="button" id="btnPrint" class="btn btn-primary" style="margin-bottom: 20px">Cetak</button>
+    
+    <div id="areaPrint">
       <table class="table table-bordered">
         <thead>
           <tr>

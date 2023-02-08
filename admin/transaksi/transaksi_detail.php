@@ -10,15 +10,38 @@ function dateY($tgl) {
 }
 ?>
 
-<div class="container" style="margin-top: 20px">
-    <h3>Detail Transaksi</h3>
+<style>
+  table tr td {
+    padding: 10px;
+  }
+  table tr td:nth-child(1) {
+    width: 20%;
+    font-weight: bold;
+  }
+  table tr td:nth-child(2) {
+    width: 40px;
+    text-align: center;
+  }
 
-    <style>
-      table tr td:nth-child(2) {
-        width: 40px;
-        text-align: center;
-      }
-    </style>
+  #titlePrint {
+    display: none;
+  }
+  @media print {
+    .header, .footer, #titleNotPrint, #btnPrint {
+      display: none;
+    }
+    #areaPrint, #titlePrint {
+      display: block;
+    }
+  }
+</style>
+
+<div class="container" style="margin-top: 20px">
+  <h3 id="titleNotPrint">Detail Transaksi</h3>
+  <h3 id="titlePrint">Transaksi Layanan <?= $data['nama_layanan'] ?></h3>
+
+  <button type="button" id="btnPrint" class="btn btn-primary" style="margin-bottom: 20px">Cetak</button>
+  <div id="areaPrint">
     <table>
       <tr>
         <td>Status</td>
@@ -91,15 +114,16 @@ function dateY($tgl) {
         <td><?= dateY($data['total']) ?></td>
       </tr>
     </table>
+  </div>
 
-    <div class="mb-4"></div>
-    <?php if($data['status'] == 'pemesanan') { ?>
-      <a href="transaksi_pengecekan.php?id=<?= $data['id_pemesanan'] ?>" class="btn btn-primary">Lanjutkan Pengecekan</a>
-      <a href="transaksi_dibatalkan.php?id=<?= $data['id_pemesanan'] ?>" class="btn btn-danger">Batalkan</a>
-    <?php } else if($data['status'] == 'pengecekan') { ?>
-      <a href="transaksi_diselesaikan.php?id=<?= $data['id_pemesanan'] ?>" class="btn btn-primary">Lanjutkan Finalisasi</a>
-    <?php } ?>
-    <div class="margin-bottom-50"></div>
+  <div class="mb-4"></div>
+  <?php if($data['status'] == 'pemesanan') { ?>
+    <a href="transaksi_pengecekan.php?id=<?= $data['id_pemesanan'] ?>" class="btn btn-primary">Lanjutkan Pengecekan</a>
+    <a href="transaksi_dibatalkan.php?id=<?= $data['id_pemesanan'] ?>" class="btn btn-danger">Batalkan</a>
+  <?php } else if($data['status'] == 'pengecekan') { ?>
+    <a href="transaksi_diselesaikan.php?id=<?= $data['id_pemesanan'] ?>" class="btn btn-primary">Lanjutkan Finalisasi</a>
+  <?php } ?>
+  <div class="margin-bottom-50"></div>
 </div>
 
 <?php require_once '../layouts/footer.php'; ?>

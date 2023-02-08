@@ -41,6 +41,8 @@
         <?php else : ?>
           <p>Pemesanan sedang dilakukan</p>
         <?php endif ?>
+      <?php elseif(isset($_SESSION['admin'])) : ?>
+        <p>Admin tidak diperkenankan untuk memesan layanan</p>
       <?php else : ?>
         <p>Kamu harus login untuk melakukan pemesanan</p>
       <?php endif ?>

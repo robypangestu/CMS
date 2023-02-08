@@ -1,4 +1,9 @@
 <?php require_once '../../config/db.php'; ?>
+<?php
+  if ( !isset($_SESSION['admin']) ) {
+    header("location: ../../login.php");
+  }
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -88,10 +93,7 @@
         <nav class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-left">
             <li class="dropdown">
-              <a href="../../index.php" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" >HOME</a>
-            </li>
-            <li class="dropdown">
-              <a href="../../layanan.php" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SERVICES</a>
+              <a href="../../index.php" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" >BERANDA</a>
             </li>
             <li class="dropdown">
               <a href="../layanan/layanan.php" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MANAJEMEN LAYANAN</a>
